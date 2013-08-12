@@ -5,13 +5,20 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>19295c3d-4416-47b5-b6bb-fd00eff46343</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>notebook.py</StartupFile>
-    <SearchPath>
-    </SearchPath>
+    <StartupFile>notebook,py</StartupFile>
+    <SearchPath>..\Notebook</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>Notebook</Name>
     <RootNamespace>Notebook</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
+    <InterpreterVersion>3.3</InterpreterVersion>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments />
+    <InterpreterPath />
+    <InterpreterArguments />
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,7 +29,12 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="command_option.py" />
+    <Compile Include="menu.py" />
     <Compile Include="notebook.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\3.3" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
 </Project>
